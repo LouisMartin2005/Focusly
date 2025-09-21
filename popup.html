@@ -1,0 +1,41 @@
+<!-- What appear when you first press the extension -->
+<!-- As this is a responsive extension most of the code will be in the javascript part-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Focusly</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="popup.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+  <div id="popupCard">
+    <!-- for the name and the setting icon  -->
+    <div class="header">
+      <span class="title">Focusly</span>
+      <span id="settingsBtn" title="Open Settings">
+        <i class="fas fa-cog"></i>
+      </span>
+    </div>
+    
+    <!-- contain the list of modes -->
+    <div id="modeListWrapper">
+      <!-- an empty list to add modes from javascript -->
+      <div id="modeList"></div>
+    </div>
+
+    <!-- when you select a mode -->
+    <div id="modeOptions" class="hidden">
+      <button id="turnOn" class="sub-option">Turn On</button>
+      <!-- <button id="turnOn1h" class="sub-option">Turn On for 1 Hour</button> -->
+      <button id="turnOff" class="sub-option">Turn Off</button>
+      <button class="sub-option settings-link" id="openSettingsLink">Customize Mode</button>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>

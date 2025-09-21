@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  padding: 10px;
+  width: 250px;
+}
+
+#popupCard {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #D72638;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-family: serif;
+  font-size: 20px;
+}
+
+.mode-btn {
+  background-color: #D72638;
+  color: white;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.mode-option {
+  background-color: #8D99AE;
+  color: white;
+  padding: 8px;
+  margin: 4px 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.mode-option.selected {
+  background-color: #D72638;
+  font-weight: bold;
+}
+
+#addNewMode {
+  background-color: #FFC857;
+  color: black;
+  padding: 8px;
+  border: none;
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.sub-option {
+  background-color: #F4F4F4;
+  border: 1px solid #8D99AE;
+  border-radius: 6px;
+  margin: 4px 0;
+  width: 100%;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.settings-link {
+  background-color: #2EC4B6;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.mode-option {
+  transition: box-shadow 0.2s ease;
+}
+
+.mode-option:hover {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3); /* shadow on all sides */
+}
+
+.mode-option.selected {
+  background-color: #D72638;
+  color: white;
+}

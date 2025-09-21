@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Focus Mode Settings</title>
+  <link rel="stylesheet" href="settings.css" />
+</head>
+<body>
+  <div class="settings-container">
+    <header class="settings-header">
+      <p class="subtitle headline">
+        Dial in your <span class="accent-red">focus</span>. We’ll block the <span class="accent-red">distractions</span>.
+      </p>
+      <div class="title-row">
+        <h1 id="profileTitle">Create New Focus Mode</h1>
+        <button id="editTitleBtn" class="icon-btn" aria-label="Rename" title="Rename">✎</button>
+      </div>
+      <input id="titleInput" class="title-input hidden" type="text" maxlength="40" />
+    </header>
+
+    <div class="input-group">
+      <input type="text" id="siteInput" placeholder="Add a site to block (e.g., youtube.com)" />
+      <button id="addSiteBtn" class="add-circle" title="Add to list" aria-label="Add site">+</button>
+    </div>
+    <div id="domainWarning" class="warning hidden">
+      That doesn’t look like a domain. Try something like ‘instagram.com’.
+    </div>
+
+    <h2 class="section-title">Blocked sites</h2>
+    <div id="emptyState" class="empty-state">No sites yet. Add one to get started.</div>
+    <ul id="siteList" class="site-icon-list"></ul>
+  </div>
+
+  <!-- Fixed bottom action bar (centered) -->
+  <footer class="action-footer" role="contentinfo">
+    <div class="action-footer__inner">
+      <div class="action-footer__center">
+        <button id="removeModeBtn" class="btn-danger">Remove Focus Mode</button>
+        <button id="saveAllBtn" class="btn-primary">Save</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="settings.js"></script>
+</body>
+</html>
